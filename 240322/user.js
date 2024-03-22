@@ -53,7 +53,7 @@ app.post('/users', (req, res) => {
   // 사용자가 존재하지 않을 경우 사용자 등록
   if (!exists) {
     db.set(id, {"name" : name, "age" : age, "password" : password})
-    res.status(201).send({
+    res.send({
       message : `${id} registered successfully`
     })
   }
