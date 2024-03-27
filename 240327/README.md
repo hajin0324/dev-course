@@ -79,3 +79,8 @@ SQL은 데이터베이스에 연산을 요청하기 위해 사용 되는 언어
 
 ## blog project 테이블 설계
 <img width="740" alt="Screenshot 2024-03-27 at 14 40 58" src="https://github.com/hajin0324/dev-course/assets/74534952/1923129b-a390-43e0-a597-b204ee6e8993">
+
+<br>
+
+### 데이터베이스 관계 다이어그램(ERD)
+<img width="586" alt="Screenshot 2024-03-27 at 15 16 32" src="https://github.com/hajin0324/dev-course/assets/74534952/b6d71f9a-d067-4262-8347-910301ad6f62">
