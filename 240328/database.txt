@@ -1,0 +1,73 @@
+# board 스키마 생성
+
+CREATE DATABASE Board;
+USE Board;
+
+
+# users 테이블 생성
+
+CREATE TABLE users
+(
+	id INT NOT NULL AUTO_INCREMENT,
+	name VARCHAR(30) NOT NULL,
+	job VARCHAR(100),
+	birth DATE,  // "YYYY-MM-DD"
+	PRIMARY KEY (id)
+);
+
+
+# users 테이블에 데이터 삽입 
+
+INSERT INTO users (name, job, birth)
+VALUES ("name1", "actor", "800123");
+
+
+# posts 테이블 생성
+
+CREATE TABLE posts
+(
+	id INT NOT NULL AUTO_INCREMENT,
+	title VARCHAR(100) NOT NULL,
+	content VARCHAR(2000),
+	created_at TIMESTAMP DEFAULT NOW(), 
+	PRIMARY KEY (id)
+);
+
+
+# posts 테이블에 데이터 삽입
+
+INSERT INTO posts (title, content)
+VALUES ("title1", "content1");
+
+
+# posts 테이블에 수정일자 컬럼 추가
+
+ALTER TABLE posts
+ADD COLUMN updated_at DATETIME
+DEFAULT NOW()
+ON UPDATE NOW();
+
+
+# posts 테이블 id 2 수정
+
+UPDATE posts
+SET content = "updated!"
+WHERE id = 2;
+
+
+# posts 테이블에 작성자 컬럼 FK 추가
+
+// user_id 컬럼 추가
+ALTER TABLE posts
+ADD user_id INT;
+
+// FK 추가
+ALTER TABLE posts
+ADD FOREIGN KEY (user_id) REFERENCES users(id);
+
+
+# posts 테이블과 users 테이블 join
+
+SELECT * 
+FROM posts LEFT JOIN users
+ON posts.user_id = users.id;
