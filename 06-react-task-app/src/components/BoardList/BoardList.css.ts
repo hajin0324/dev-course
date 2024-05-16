@@ -24,6 +24,7 @@ export const addBtn = style({
   fontSize: vars.fontSizing.T2,
   cursor: 'pointer',
   marginLeft: vars.spacing.big1,
+  marginRight: vars.spacing.big1,
   ':hover': {
     opacity: 0.6
   }
@@ -31,10 +32,10 @@ export const addBtn = style({
 
 export const boardItem = style({
   color: vars.color.brightText,
-  fontSize: vars.fontSizing.T3,
+  fontSize: vars.fontSizing.T4,
   backgroundColor: vars.color.mainFaded,
-  padding: vars.spacing.small,
-  borderRadius: 10,
+  padding: vars.spacing.medium,
+  borderRadius: 8,
   cursor: 'pointer',
   marginRight: vars.spacing.big1,
   ":hover": {
