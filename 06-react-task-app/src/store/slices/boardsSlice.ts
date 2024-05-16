@@ -11,7 +11,7 @@ const initialState: TBoardState = {
   boardArray: [
     {
       boardId: 'board-0',
-      boardName: "첫 번째 게시물",
+      boardName: "기본 게시판",
       lists: [
         {
           listId: "list-0",
