@@ -12,7 +12,7 @@ export const vars = createGlobalTheme(":root", {
     brightText: 'rgb(255, 255, 255)',
     darkText: 'rgb(24, 42, 77)',
     secondaryDarkText: 'rgb(94, 108, 132)',
-    secondaryDarkTextHover: 'rgb(218, 200, 200)',
+    secondaryDarkTextHover: 'rgb(190, 200, 220)',
     selectedTab: 'rgb(255, 255, 255)',
     updateButton: 'rgb(237, 180, 88)',
     deleteButton: 'rgb(237, 51, 88)'

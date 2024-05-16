@@ -65,7 +65,10 @@ const List: FC<TListProps> = ({
           />
         </div>
       ))}
-      <ActionButton />
+      <ActionButton 
+        boardId={boardId} 
+        listId={list.listId}
+      />
     </div>
   )
 }
