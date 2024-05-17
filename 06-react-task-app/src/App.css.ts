@@ -3,19 +3,20 @@ import { createGlobalTheme, style } from "@vanilla-extract/css";
 export const vars = createGlobalTheme(":root", {
   color: {
     main: '#ffa726',
-    mainDarker: 'rgb(20, 80, 240)',
-    mainFaded: 'rgb(152, 161, 192)',
-    mainFadedBright: '#ffb74d',
-    list: 'rgb(235, 236, 240)',
+    mainDarker: 'rgb(34, 58, 136)',
+    mainFaded: 'rgb(152, 161, 200)',//'rgb(152, 161, 192)',
+    mainFadedBright: 'rgb(120, 140, 180)',
+    sub: 'rgb(239, 239, 239)',
+    list: 'rgb(208, 211, 218)',
     task: 'rgb(255, 255, 255)',
     taskHover: 'rgb(245, 245, 245)',
     brightText: 'rgb(255, 255, 255)',
     darkText: 'rgb(24, 42, 77)',
     secondaryDarkText: 'rgb(94, 108, 132)',
-    secondaryDarkTextHover: 'rgb(190, 200, 220)',
+    secondaryDarkTextHover: 'rgb(192, 200, 210)',
     selectedTab: 'rgb(255, 255, 255)',
-    updateButton: 'rgb(237, 180, 88)',
-    deleteButton: 'rgb(237, 51, 88)'
+    updateButton: 'rgb(243, 173, 12)',
+    deleteButton: 'rgb(220, 57, 40)'
   },
   fontSizing: {
     T1: '32px',
@@ -47,7 +48,8 @@ export const appContainer = style({
   flexDirection: "column",
   minHeight: "100vh",
   height: "max-content",
-  width: "100vw"
+  width: "100vw",
+  backgroundColor: vars.color.sub
 });
 
 export const board = style({
@@ -59,4 +61,39 @@ export const board = style({
 export const buttons = style({
   marginTop: "auto",
   paddingLeft: vars.spacing.big2
+});
+
+export const deleteBoardBtn = style({
+  border: 'none', 
+  width: 'max-content',
+  marginTop: 'auto',
+  marginLeft: vars.spacing.big1,
+  marginBottom: 30,
+  fontSize: vars.fontSizing.T4,
+  color: vars.color.brightText,
+  padding: vars.spacing.big2,
+  backgroundColor: vars.color.mainDarker,
+  cursor: 'pointer',
+  minWidth: 150,
+  ":hover": {
+    opacity: 0.8
+  }
+});
+
+export const loggerBtn = style({
+  border: 'none',
+  width: 'max-content',
+  marginTop: 'auto',
+  marginLeft: '15px',
+  marginRight: '30px',
+  marginBottom: '30px',
+  fontSize: vars.fontSizing.T4,
+  color: vars.color.brightText,
+  padding: vars.spacing.big2,
+  backgroundColor: vars.color.mainDarker,
+  cursor: 'pointer',
+  minWidth: 150,
+  ":hover": {
+    opacity: 0.8
+  }
 });

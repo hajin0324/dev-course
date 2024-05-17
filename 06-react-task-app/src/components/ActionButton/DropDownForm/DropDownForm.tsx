@@ -26,8 +26,8 @@ const DropDownForm: FC<TDropDownFormProps> = ({
     "일의 제목을 입력하세요."
 
   const buttonTitle = list ?
-    "리스트 추가하기" :
-    "일 추가하기"
+    "Add List" :
+    "Add Task"
 
   const handleTextChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
     setText(e.target.value);

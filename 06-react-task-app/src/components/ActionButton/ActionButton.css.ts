@@ -6,11 +6,13 @@ export const taskBtn = style({
   alignItems: 'center',
   height: 'max-content',
   marginTop: vars.spacing.small,
-  fontSize: vars.fontSizing.T3,
+  fontSize: vars.fontSizing.T4,
   padding: vars.spacing.medium,
   cursor: 'pointer',
+  boxSizing: 'border-box',
   ":hover": {
-    backgroundColor: vars.color.secondaryDarkTextHover
+    outline: '1.5px solid',
+    outlineColor: vars.color.mainDarker
   }
 })
 
@@ -20,7 +22,7 @@ export const listBtn = style({
   height: 'max-content',
   minWidth: vars.minWidth.list,
   color: vars.color.brightText,
-  fontSize: vars.fontSizing.T3,
+  fontSize: vars.fontSizing.T4,
   backgroundColor: vars.color.mainFaded,
   paddingTop: vars.spacing.medium,
   paddingBottom: vars.spacing.medium,

@@ -59,6 +59,7 @@ export const buttons = style({
 export const updateBtn = style({
   border: 'none',
   fontSize: vars.fontSizing.T4,
+  color: vars.color.brightText,
   padding: vars.spacing.big2,
   marginRight: vars.spacing.big1,
   backgroundColor: vars.color.updateButton,
@@ -71,6 +72,7 @@ export const updateBtn = style({
 export const deleteBtn = style({
   border: 'none',
   fontSize: vars.fontSizing.T4,
+  color: vars.color.brightText,
   padding: vars.spacing.big2,
   marginRight: vars.spacing.big1,
   backgroundColor: vars.color.deleteButton,

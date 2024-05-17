@@ -35,7 +35,6 @@ export const boardItem = style({
   fontSize: vars.fontSizing.T4,
   backgroundColor: vars.color.mainFaded,
   padding: vars.spacing.medium,
-  borderRadius: 8,
   cursor: 'pointer',
   marginRight: vars.spacing.big1,
   ":hover": {
@@ -48,7 +47,6 @@ export const boardItemActive = style({
   fontSize: vars.fontSizing.T4,
   backgroundColor: vars.color.selectedTab,
   padding: vars.spacing.medium,
-  borderRadius: 8,
   cursor: 'pointer',
   marginRight: vars.spacing.big1
 });
