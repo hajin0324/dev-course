@@ -23,8 +23,8 @@ export const addBtn = style({
   color: vars.color.brightText,
   fontSize: vars.fontSizing.T2,
   cursor: 'pointer',
-  marginLeft: vars.spacing.big1,
-  marginRight: vars.spacing.big1,
+  marginLeft: vars.spacing.medium,
+  marginRight: vars.spacing.medium,
   ':hover': {
     opacity: 0.6
   }
